@@ -3,7 +3,7 @@ import './App.css';
 import Svgx from './Svgx';
 import Display from './display';
 import * as d3 from 'd3';
-import { useState,useRef,useEffect } from 'react';
+import { useState,useEffect } from 'react';
 import csvFilePath from './Data visualization files_all_in_one.csv';
 import csvToJSON from './csvreader'
 import plotx from './plotx'
@@ -19,7 +19,6 @@ function App() {
   // const [st,setSt]=useState({});
   // //const [states,setStates]=useState({});
 
-  const svgref=useRef();
 useEffect( () => {      
 d3.json("https://unpkg.com/us-atlas@2.1.0/us/10m.json").then(function(us) {
 fetch(csvFilePath)

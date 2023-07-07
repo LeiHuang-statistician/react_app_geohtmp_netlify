@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+
 import plotx from './plotx'
 import * as d3 from 'd3'
 
